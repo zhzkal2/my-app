@@ -1,3 +1,4 @@
+import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import Image from "next/image";
 
@@ -33,6 +34,7 @@ export default function Test() {
                     <div className="bg-indigo-600 bg-opacity-0 col-span-1"></div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 }
