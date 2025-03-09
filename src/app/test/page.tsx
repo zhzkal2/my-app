@@ -6,8 +6,8 @@ export default function Test() {
     return (
         <>
             <Header /> {/* Header 컴포넌트가 렌더링 됩니다. */}
-            <section className="w-full max-w-[2000px] mx-auto px-[2.5rem]">
-                <div className='relative  w-full max-w-[1000px] mx-auto'>
+            <section className="w-full max-w-[125rem] mx-auto px-[2.5rem] ">
+                <div className='relative  w-full max-w-[62.5rem] mx-auto'>
                     <Image
                         src="/main-v@2x.png"
                         alt="toranomon"
@@ -15,23 +15,75 @@ export default function Test() {
                         height={500}
                         layout="responsive"
                     />
-                    <div className="absolute  top-8 w-full h-[130px] bg-black/50  flex justify-center items-center">
-                        <h1 className="text-white text-3xl">여기에 텍스트가 들어갑니다</h1>
+                    <div className="absolute pr-5 pl-5 pt-3 top-4  gap-0.5 w-full  md:top-8 h-[4rem] md:h-[8.125rem]  bg-black/50  flex flex-col justify-center items-center">
+                    {/* <div className="pr-5 pl-5 pt-3 absolute gap-0.5 top-4 lg:top-8 w-full h-[4rem] lg:h[8.125rem] bg-black/50  flex flex-col justify-center items-center  "> */}
+                    <Image
+src={"/Hello,TORANOMON@2x.png"}
+alt='toranomon'
+width={642}
+height={61}
+layout="intrinsic"  
+className=' h-auto w-[85%] md:w-[100%]'
+/>
+                    <span className="text-[#FFFFFF] whitespace-nowrap text-[0.7rem] md:text-[1.563rem]  ">東京オフィスは、虎ノ門にて新しいスタートを切ります</span>
                     </div>
                 </div>
-                <div className="w-full max-w-[1000px] mx-auto grid grid-cols-2  grid-rows-auto gap-4">
+                <div className="relative w-full max-w-[62.5rem] mt-4  mx-auto  flex flex-wrap gap-4 justify-start">
                     {/* 첫 번째 열 */}
-                    <div className="bg-blue-500 bg-opacity-0 col-span-1">첫 번째 콘텐츠</div>
+                    <div className="bg-blue-500 flex-none  w-full sm:w-1/2  ">
+                    <Image
+                        src="/main-v@2x.png"
+                        alt="toranomon"
+                        width={500}
+                        height={500}
+                        className='p-4 m-4'
+                    />
+                    </div>
 
                     {/* 두 번째 열 */}
-                    <div className="bg-green-500 col-span-1">두 번째 콘텐츠</div>
+                    <div className="bg-green-500  flex-none w-full sm:w-1/2 ">
+                        <div  className='p-4'>
+                        <span>
+                        このたび弊社は、東京オフィスを東京都港区虎ノ門に移転し ２０１４年３月４日(火)大安より営業の運びとなりました。 新オフィスは、打ち合わせスペースも多くありますので お近くにお越しの際はどうぞお気軽にお立ち寄りください。 今後とも弊社をどうぞよろしくお願い申し上げます。
+                        </span>
+                        </div>
 
-                    {/* 두 번째 콘텐츠: 2개의 열을 병합 */}
-                    <div className="bg-green-500 col-span-2 row-span-2">두 번째 콘텐츠 (2개의 열 합침)</div>
+                    </div>
+
+                    {/* 세 번째 열 */}
+                    <div className="bg-green-500 flex-none  w-full sm:w-1/2 ">
+                        <div className='p-4'>
+                        <span >
+                            <label htmlFor=""></label>
+                        新東京オフィスの地図はこちら
+                        </span>
+                        <span>
+                        〒105-0001 港区虎ノ門2-7-16 エグゼクティブタワー虎ノ門 504
+                        </span>
+
+                        </div>
+                        {/* map */}
+
+                    </div>
+                    {/* 네 번째 열 */}
+                    <div className="bg-green-500  w-full sm:w-1/2 ">
+                        <div className='p-4'>
+                        <span >
+                            <label htmlFor=""></label>
+                        新東京オフィスの地図はこちら
+                        </span>
+                        <span>
+                        〒105-0001 港区虎ノ門2-7-16 エグゼクティブタワー虎ノ門 504
+                        </span>
+
+                        </div>
+                        {/* map */}
+
+                    </div>
 
                     {/* 세 번째 콘텐츠: 일반적인 셀 */}
-                    <div className="bg-red-500 col-span-1">세 번째 콘텐츠</div>
-                    <div className="bg-indigo-600 bg-opacity-0 col-span-1"></div>
+                    <div className="bg-red-500  w-full sm:w-1/2 ">세 번째 콘텐츠</div>
+                    <div className="bg-indigo-600  w-full sm:w-1/2 "></div>
                 </div>
             </section>
             <Footer />
