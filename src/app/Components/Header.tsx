@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export default function Header() {
     return (
-        <header style={{ top: '1px', left: '0px', width: '2000px', height: '39px', background: '#FFFFFF', boxShadow: '0px 1px 1px #D8D8D8BF', opacity: '1' }}>
+        <header className="relative top-[0.0625rem]  w-full max-w-[125rem] mx-auto h-[2.4375rem] bg-white shadow-md ">
             <Link href="https://ankh-systems.co.jp/">
-                <div className="absolute top-[13px] left-[12px] ">
+                <div className="relative top-[0.8125rem] left-[0.75rem] ">
                     <Image
                         src="/logo@2x.png"  // 이미지 경로
                         alt="Logo"
