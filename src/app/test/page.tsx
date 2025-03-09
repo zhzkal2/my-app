@@ -30,7 +30,7 @@ className=' h-auto w-[85%] md:w-[100%]'
                 </div>
                 <div className="relative w-full max-w-[62.5rem] mt-4  mx-auto  flex flex-wrap gap-4 ">
                     {/* 첫 번째 열 */}
-                    <div className="bg-blue-500  flex-grow basis-[calc(50%-0.5rem)]    ">
+                    <div className="bg-blue-500      flex-grow basis-[calc(50%-0.5rem)]    ">
                     <Image
                         src="/main-v@2x.png"
                         alt="toranomon"
