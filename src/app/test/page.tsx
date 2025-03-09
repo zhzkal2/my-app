@@ -1,6 +1,7 @@
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import Image from "next/image";
+import MyMap from '../Components/MyMap';
 
 export default function Test() {
     return (
@@ -86,6 +87,8 @@ className=' h-auto w-[85%] md:w-[100%]'
                     <div className="bg-indigo-600  flex-grow basis-[calc(50%-0.5rem)] "></div>
                 </div>
             </section>
+
+            <MyMap/>
             <Footer />
         </>
     );
