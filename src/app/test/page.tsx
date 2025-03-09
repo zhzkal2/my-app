@@ -28,20 +28,20 @@ className=' h-auto w-[85%] md:w-[100%]'
                     <span className="text-[#FFFFFF] whitespace-nowrap text-[0.7rem] md:text-[1.563rem]  ">東京オフィスは、虎ノ門にて新しいスタートを切ります</span>
                     </div>
                 </div>
-                <div className="relative w-full max-w-[62.5rem] mt-4  mx-auto  flex flex-wrap gap-4 justify-start">
+                <div className="relative w-full max-w-[62.5rem] mt-4  mx-auto  flex flex-wrap gap-4 ">
                     {/* 첫 번째 열 */}
-                    <div className="bg-blue-500 flex-none  w-full sm:w-1/2  ">
+                    <div className="bg-blue-500  flex-grow basis-[calc(50%-0.5rem)]    ">
                     <Image
                         src="/main-v@2x.png"
                         alt="toranomon"
                         width={500}
                         height={500}
-                        className='p-4 m-4'
+                        className='p-4 '
                     />
                     </div>
 
                     {/* 두 번째 열 */}
-                    <div className="bg-green-500  flex-none w-full sm:w-1/2 ">
+                    <div className="bg-green-500 flex-grow basis-[calc(50%-0.5rem)]  ">
                         <div  className='p-4'>
                         <span>
                         このたび弊社は、東京オフィスを東京都港区虎ノ門に移転し ２０１４年３月４日(火)大安より営業の運びとなりました。 新オフィスは、打ち合わせスペースも多くありますので お近くにお越しの際はどうぞお気軽にお立ち寄りください。 今後とも弊社をどうぞよろしくお願い申し上げます。
@@ -51,7 +51,7 @@ className=' h-auto w-[85%] md:w-[100%]'
                     </div>
 
                     {/* 세 번째 열 */}
-                    <div className="bg-green-500 flex-none  w-full sm:w-1/2 ">
+                    <div className="bg-green-500 flex-grow basis-[calc(50%-0.5rem)]   ">
                         <div className='p-4'>
                         <span >
                             <label htmlFor=""></label>
@@ -66,7 +66,7 @@ className=' h-auto w-[85%] md:w-[100%]'
 
                     </div>
                     {/* 네 번째 열 */}
-                    <div className="bg-green-500  w-full sm:w-1/2 ">
+                    <div className="bg-green-500  flex-grow basis-[calc(50%-0.5rem)]   ">
                         <div className='p-4'>
                         <span >
                             <label htmlFor=""></label>
@@ -82,8 +82,8 @@ className=' h-auto w-[85%] md:w-[100%]'
                     </div>
 
                     {/* 세 번째 콘텐츠: 일반적인 셀 */}
-                    <div className="bg-red-500  w-full sm:w-1/2 ">세 번째 콘텐츠</div>
-                    <div className="bg-indigo-600  w-full sm:w-1/2 "></div>
+                    <div className="bg-red-500  flex-grow basis-[calc(50%-0.5rem)]  ">세 번째 콘텐츠</div>
+                    <div className="bg-indigo-600  flex-grow basis-[calc(50%-0.5rem)] "></div>
                 </div>
             </section>
             <Footer />
