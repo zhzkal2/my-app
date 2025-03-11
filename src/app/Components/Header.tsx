@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Header() {
     return (
-        <header className="relative top-[0.0625rem]  w-full max-w-[125rem] mx-auto h-[2.4375rem] bg-white shadow-md ">
+        <header className="relative top-[0.0625rem]  w-full  mx-auto h-[2.4375rem] bg-white shadow-md ">
             <Link href="https://ankh-systems.co.jp/">
                 <div className="relative top-[0.8125rem] left-[0.75rem] ">
                     <Image

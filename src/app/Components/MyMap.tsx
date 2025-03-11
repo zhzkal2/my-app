@@ -4,37 +4,43 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "500px    ",
+  height: "16.75rem",
 };
 
 
 
 
 const center = {
-  lat: 37.5665, // 서울 위도
-  lng: 126.978, // 서울 경도
+  lat: 35.66680824442341,
+  lng: 139.7421143576228,
 };
 
-export default function MyMap() {
-  return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}>
-      <GoogleMap mapContainerStyle={containerStyle} 
-      center={center}
-       zoom={15}
-       mapTypeId="roadmap"
+interface MyMapProps extends React.HTMLProps<HTMLDivElement> { }
 
-       options={{
-        disableDefaultUI: true, // 기본 지도 컨트롤 비활성화
-        zoomControl: true, // 확대/축소 컨트롤 활성화
-        mapTypeControl: false, // 지도 유형 컨트롤 비활성화
-        streetViewControl: false, // 스트리트 뷰 컨트롤 비활성화
-        rotateControl: false, // 회전 컨트롤 비활성화
-      }}
-       
-       >
-        
-        <Marker position={center}  />
-      </GoogleMap>
-    </LoadScript>
+export default function MyMap(props: MyMapProps) {
+  return (
+    <div {...props}>
+      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}
+        language="ja"
+      >
+        <GoogleMap mapContainerStyle={containerStyle}
+          center={center}
+          zoom={17}
+          mapTypeId="roadmap"
+
+          options={{
+            disableDefaultUI: true,
+            zoomControl: true,
+            mapTypeControl: false,
+            streetViewControl: false,
+            rotateControl: false,
+          }}
+
+        >
+
+          <Marker position={center} />
+        </GoogleMap>
+      </LoadScript>
+    </div>
   );
 }
