@@ -8,8 +8,9 @@ export default function Home() {
   return (
     <>
       <Header /> {/* Header */}
-      <section className="mx-auto w-full items-center justify-center overflow-hidden bg-gray-200 px-[2.5rem]">
-        <div className="mb-10">
+      
+      <main className="mx-auto w-full items-center justify-center overflow-hidden bg-gray-200 ">
+        <section className="mb-10">
           <div className="relative mx-auto max-w-[31.5rem] lg:max-w-[62.5rem]">
             <Image
               src="/main-v@2x.png"
@@ -19,6 +20,7 @@ export default function Home() {
               className="w-full"
             />
             <div className="lg: absolute top-4 flex h-[4rem] w-full flex-col items-center justify-center gap-2 bg-black/50 pt-4 pr-5 pb-1 pl-5 sm:h-[6.125rem] md:h-[7.125rem] lg:h-[8.125rem]">
+              <h1>
               <Image
                 src={'/Hello,TORANOMON@2x.png'}
                 alt="toranomon"
@@ -27,14 +29,18 @@ export default function Home() {
                 layout=""
                 className="mx-auto w-[80%] max-w-[642px] sm:w-[85%] md:w-[90%] lg:w-auto"
               />
-              <span className="text-center text-[0.6rem] leading-[1.25rem] tracking-[0.03125rem] text-[#FFFFFF] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.563rem] lg:leading-[1.125rem] lg:tracking-[0.078125rem]">
+              </h1>
+              <h2 className="text-center text-[0.6rem] leading-[1.25rem] tracking-[0.03125rem] text-[#FFFFFF] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.563rem] lg:leading-[1.125rem] lg:tracking-[0.078125rem]">
                 東京オフィスは、虎ノ門にて新しいスタートを切ります
-              </span>
+              </h2>
             </div>
           </div>
+        </section>
+        <section
 
-          <div className="mx-auto mt-4 flex max-w-[62.5rem] flex-col items-center justify-center lg:flex-row lg:items-stretch">
-            <div className="max-w-[30.625rem] bg-[#07AB74]">
+
+           className="mx-auto mt-4 flex max-w-[62.5rem] flex-col items-center justify-center lg:flex-row lg:items-stretch">
+            <article className="max-w-[30.625rem] bg-[#07AB74]">
               <Image
                 src="/We just moved toTORANOMON4th March 2014@2x.png"
                 alt="toranomon"
@@ -42,26 +48,27 @@ export default function Home() {
                 height={500}
                 className="p-10"
               />
-            </div>
+            </article>
 
-            <div className="max-w-[30.625rem] bg-white">
-              <div className="p-10">
-                <span className="text-[0.875rem] leading-[2.25rem] tracking-[0.14875rem]">
+            <article className="max-w-[30.625rem] bg-white p-10">
+              
+                <p className="text-[0.875rem] leading-[2.25rem] tracking-[0.14875rem]">
                   このたび弊社は、東京オフィスを東京都港区虎ノ門に移転し
                   ２０１４年３月４日(火)大安より営業の運びとなりました。
                   新オフィスは、打ち合わせスペースも多くありますので
                   お近くにお越しの際はどうぞお気軽にお立ち寄りください。
                   今後とも弊社をどうぞよろしくお願い申し上げます。
-                </span>
-              </div>
-            </div>
-          </div>
+                </p>
+            
+            </article>
+          
+          </section>
 
-          <div className="relative mx-auto mt-4 flex w-full max-w-[62.5rem] flex-col items-center justify-center gap-5 lg:flex-row">
-            <div className="flex w-full max-w-[30.625rem] flex-col gap-5">
+          <section className="relative mx-auto mt-4 flex w-full max-w-[62.5rem] flex-col items-center justify-center gap-5 lg:flex-row">
+            <section className="flex w-full max-w-[30.625rem] flex-col gap-5">
               {/* 1 Col */}
-              <div className="h-[23.75rem] bg-white shadow-[0px_1px_1px_#D8D8D8BF]">
-                <div className="p-4">
+              <article className="h-[23.75rem] bg-white shadow-[0px_1px_1px_#D8D8D8BF] p-4">
+                
                   <div className="mb-2 flex items-end gap-2">
                     <Image
                       src="/Location@2x.png"
@@ -74,16 +81,16 @@ export default function Home() {
                       新東京オフィスの地図はこちら
                     </span>
                   </div>
-                  <span className="mt-3 text-[0.75rem] leading-[1.0625rem] lg:text-[0.75rem]">
+                  <address className="mt-3 text-[0.75rem] leading-[1.0625rem] lg:text-[0.75rem]">
                     〒105-0001 港区虎ノ門2-7-16 <br className="lg:hidden" />
                     エグゼクティブタワー虎ノ門 504
-                  </span>
+                  </address>
                   <MyMap className="mx-auto mt-1 h-[80%] w-[90%] items-center justify-center lg:mt-3 lg:h-[100%] lg:w-[100%]" />
-                </div>
-              </div>
+                
+              </article>
 
               {/* 2 Col */}
-              <div className="max-h-[19.375rem] bg-[#DC5E48] shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[19.375rem]">
+              <article className="max-h-[19.375rem] bg-[#DC5E48] shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[19.375rem]">
                 <div className="pt-4 pr-4 pb-4 pl-4 lg:pt-6 lg:pr-6 lg:pb-2 lg:pl-6">
                   <Image
                     src="/title@2x.png"
@@ -145,10 +152,10 @@ export default function Home() {
                     ※虎ノ門駅の半径1km以内
                   </div>
                 </div>
-              </div>
+              </article>
 
               {/* 3 Col */}
-              <div className="bg-white shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[25rem]">
+              <article className="bg-white shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[25rem]">
                 <div className="p-4">
                   <div className="flex items-center gap-2">
                     <Image
@@ -205,12 +212,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </article>
+            </section>
 
-            <div className="flex w-full max-w-[30.625rem] flex-col gap-5">
+            <section className="flex w-full max-w-[30.625rem] flex-col gap-5">
               {/* 4 Col */}
-              <div className="bg-[#846AB4] shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[13.75rem]">
+              <article className="bg-[#846AB4] shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[13.75rem]">
                 <div className="p-6">
                   <div className="mb-2 flex items-center justify-center gap-4">
                     <Image
@@ -233,10 +240,10 @@ export default function Home() {
                     className="mx-auto h-[100%] w-[100%] max-w-[385px] pt-8 pb-4"
                   />
                 </div>
-              </div>
+              </article>
 
               {/* 5 col */}
-              <div className="bg-white p-6 shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[33.125rem]">
+              <article className="bg-white p-6 shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[33.125rem]">
                 <div className=" ">
                   <div className="flex items-center gap-2">
                     <Image
@@ -246,9 +253,9 @@ export default function Home() {
                       height={30}
                       className=" "
                     />
-                    <span className="text-[1.125rem] lg:text-[1.375rem]">
-                      虎ノ門の由来って？{' '}
-                    </span>
+                    <h3 className="text-[1.125rem] lg:text-[1.375rem]">
+                      虎ノ門の由来って？
+                    </h3>
                   </div>
 
                   <Image
@@ -258,7 +265,7 @@ export default function Home() {
                     height={320}
                     className="mx-auto pt-4"
                   />
-                  <span className="block pt-8 text-[0.675rem] leading-[1.25rem] lg:text-[0.8rem]">
+                  <p className="block pt-8 text-[0.675rem] leading-[1.25rem] lg:text-[0.8rem]">
                     虎ノ門駅を出てすぐ、
                     <br className="lg:hidden" />{' '}
                     虎ノ門交差点付近に鎮座するこの銅像。
@@ -270,11 +277,11 @@ export default function Home() {
                     そもそもどうして、
                     <br className="lg:hidden" />{' '}
                     ここの地名が「虎ノ門」なのか気になりませんか？
-                  </span>
+                  </p>
                 </div>
-              </div>
+              </article>
               {/* 6 col */}
-              <div className="bg-[#E9BC06] shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[21.25rem]">
+              <article className="bg-[#E9BC06] shadow-[0px_1px_1px_#D8D8D8BF] lg:h-[21.25rem]">
                 <div className="pt-2 pr-4 pb-4 pl-4">
                   <Image
                     src="/Pick up foods@2x.png"
@@ -291,7 +298,7 @@ export default function Home() {
                       height={204}
                       className="lg-mx-0 mx-auto"
                     />
-                    <div className="text-center lg:text-left">
+                    <p className="text-center lg:text-left">
                       <span className="block text-[1.125rem] tracking-[-0.028125rem] text-white">
                         めん徳　二代目つじ田　新橋店
                         <br />
@@ -313,19 +320,19 @@ export default function Home() {
                         <br className="lg:hidden" />
                         頻繁に出没しそうな予感がして います。
                       </span>
-                    </div>
-                  </div>
+                    </p>
+                  </div> 
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+              </article>
+            </section>
+          </section>
 
-        <div className="mx-auto mt-20 mb-20 w-full max-w-[62.5rem] text-center">
-          <span className="text-[1.125rem] leading-[2rem] tracking-[0.225rem] sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2.25rem]">
+
+        <section className="mx-auto mt-20 mb-20 w-full max-w-[62.5rem] text-center">
+          <p className="text-[1.125rem] leading-[2rem] tracking-[0.225rem] sm:text-[1.25rem] md:text-[1.5rem] lg:text-[2.25rem]">
             新しくなった東京オフィスへ <br className="sm:hidden" />
             ぜひお越しください。
-          </span>
+          </p>
           <Link href="https://ankh-systems.co.jp/">
             <div className="mt-8 flex h-[6.25rem] items-center gap-5 bg-white bg-no-repeat pr-4 shadow-[0px_1px_1px_#D8D8D8BF]">
               <div className="flex w-full items-center justify-center gap-5">
@@ -336,11 +343,11 @@ export default function Home() {
                   height={36}
                   className="h-[80%] w-[80%] max-w-[328px]"
                 />
-                <span className="hidden pt-3 text-center leading-[1.0625rem] md:block md:text-[1rem] lg:text-[1.0625rem]">
+                <p className="hidden pt-3 text-center leading-[1.0625rem] md:block md:text-[1rem] lg:text-[1.0625rem]">
                   株式会社アンクシステムズ
                   <br className="hidden md:block lg:hidden" />{' '}
                   コーポレートサイトへ
-                </span>
+                </p>
               </div>
               <Image
                 src="/arrow@2x.png"
@@ -351,8 +358,9 @@ export default function Home() {
               />
             </div>
           </Link>
-        </div>
-      </section>
+        </section>
+        </main>
+      
       <Footer />
     </>
   );
